@@ -25,10 +25,11 @@ const nftMetadata = await getNftMetadata(lfghoContractAddress, randomTokenId);
 
 // build the image url
 const nftImageUrl = nftMetadata?.image?.cachedUrl;
+const button02 = nftMetadata?.city
 
 
 const frameMetadata = getFrameMetadata({
-  buttons: ['randomize nft'],
+  buttons: ['randomize nft','button02'],
   image: nftImageUrl,
   post_url: postUrl,
 });
