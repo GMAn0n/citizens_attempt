@@ -3,8 +3,8 @@ import { getNftMetadata } from './lib/getNftMetadata';
 import type { Metadata } from 'next';
 
 
-const postUrl = "https://fc-frame-zora-nfts-carrousel.vercel.app/api/frame"; 
-const lfghoContractAddress = "0x45ab4ace5836190fed42800b1c11cb6bdb3b4dc5";
+const postUrl = "https://69citizens-attempt.vercel.app/api/frame"; 
+const lfghoContractAddress = "0xbdde08bd57e5c9fd563ee7ac61618cb2ecdc0ce0";
 
 // randomize the tokenID
 const maxSupply = 76;
