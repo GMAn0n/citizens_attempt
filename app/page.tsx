@@ -29,7 +29,7 @@ const button02 = nftMetadata?.city;
 
 
 const frameMetadata = getFrameMetadata({
-  buttons: ['randomize nft'],[${button02],
+  buttons: ['randomize nft'],[${button02}],
   image: nftImageUrl,
   post_url: postUrl,
 });
