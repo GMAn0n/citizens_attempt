@@ -15,7 +15,7 @@ const randomTokenId = Math.floor(Math.random() * maxSupply) + 1;
 const options = {method: 'GET', headers: {accept: 'application/json'}};
 const Url = 'https://eth-mainnet.g.alchemy.com/';
 const endpoint = Url + `nft/v3/${process.env.ALCHEMY_ID || 'docs-demo'}/getNFTMetadata`;
-const params = `?contractAddress=${lfghoContractAddress}&tokenId=${randomTokenId}&refreshCache=false`;
+const params = `?contractAddress=${lfghoContractAddress}&tokenId=${randomTokenId}&refreshCache=false?scale.option=fit`;
 const response = await fetch(endpoint+params, options);
 const nftMetadata = await response.json();
 */
@@ -29,7 +29,7 @@ const button02 = nftMetadata?.city;
 
 
 const frameMetadata = getFrameMetadata({
-  buttons: ['randomize nft'],[${button02}],
+  buttons: ['randomize nft',{$button2}]
   image: nftImageUrl,
   post_url: postUrl,
 });
