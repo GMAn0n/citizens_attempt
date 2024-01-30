@@ -5,7 +5,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
   const postUrl = "https:/mu-attempt-cit.vercel.app/api/frame"; 
   const lfghoContractAddress = "0xbdde08bd57e5c9fd563ee7ac61618cb2ecdc0ce0";
 
-  const maxSupply = 8000;
+  const maxSupply = 420;
   const randomTokenId = Math.floor(Math.random() * maxSupply) + 1;
 
   const nftMetadata = await getNftMetadata(lfghoContractAddress, randomTokenId);
