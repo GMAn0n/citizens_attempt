@@ -17,7 +17,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
     <meta property="fc:frame" content="vNext" />
     <meta property="fc:frame:image" content=${nftImageUrl} />
     <meta property="fc:frame:button:1" content="Randomize nft" />
-    <meta property="fc:frame:button:2" content="${city}" />
+    <meta property="fc:frame:button:2" content="${button02}" />
     <meta property="fc:frame:post_url" content=${postUrl} />
   </head></html>`);
 }
