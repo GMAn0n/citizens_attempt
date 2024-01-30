@@ -13,8 +13,8 @@ const randomTokenId = Math.floor(Math.random() * maxSupply) + 1;
 /*
 // fetch nft metadata
 const options = {method: 'GET', headers: {accept: 'application/json'}};
-const baseUrl = 'https://base-mainnet.g.alchemy.com/';
-const endpoint = baseUrl + `nft/v3/${process.env.ALCHEMY_ID || 'docs-demo'}/getNFTMetadata`;
+const baseUrl = 'https://eth-mainnet.g.alchemy.com/';
+const endpoint = Url + `nft/v2/${process.env.ALCHEMY_ID || 'docs-demo'}/getNFTMetadata`;
 const params = `?contractAddress=${lfghoContractAddress}&tokenId=${randomTokenId}&refreshCache=false`;
 const response = await fetch(endpoint+params, options);
 const nftMetadata = await response.json();
