@@ -3,7 +3,7 @@ import { getNftMetadata } from './lib/getNftMetadata';
 import type { Metadata } from 'next';
 
 
-const postUrl = "https://69citizens-attempt.vercel.app/api/frame"; 
+const postUrl = "https://69citizens-attempt-mu.vercel.app/api/frame"; 
 const lfghoContractAddress = "0xbdde08bd57e5c9fd563ee7ac61618cb2ecdc0ce0";
 
 // randomize the tokenID
