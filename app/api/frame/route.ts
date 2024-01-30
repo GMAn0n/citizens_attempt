@@ -11,7 +11,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
   const nftMetadata = await getNftMetadata(lfghoContractAddress, randomTokenId);
 
   const nftImageUrl = nftMetadata?.image?.cachedUrl;
-  const button02 = nftMetadata?.city;
+  const button02 = nftMetadata?.raw?.city;
 
   return new NextResponse(`<!DOCTYPE html><html><head>
     <meta property="fc:frame" content="vNext" />
