@@ -7,14 +7,14 @@ const postUrl = "https://69citizens-attempt-mu.vercel.app/api/frame";
 const lfghoContractAddress = "0xbdde08bd57e5c9fd563ee7ac61618cb2ecdc0ce0";
 
 // randomize the tokenID
-const maxSupply = 76;
+const maxSupply = 8000;
 const randomTokenId = Math.floor(Math.random() * maxSupply) + 1;
 
 /*
 // fetch nft metadata
 const options = {method: 'GET', headers: {accept: 'application/json'}};
 const baseUrl = 'https://eth-mainnet.g.alchemy.com/';
-const endpoint = Url + `nft/v2/${process.env.ALCHEMY_ID || 'docs-demo'}/getNFTMetadata`;
+const endpoint = Url + `nft/v3/${process.env.ALCHEMY_ID || 'docs-demo'}/getNFTMetadata`;
 const params = `?contractAddress=${lfghoContractAddress}&tokenId=${randomTokenId}&refreshCache=false`;
 const response = await fetch(endpoint+params, options);
 const nftMetadata = await response.json();
